@@ -1,0 +1,511 @@
+*{
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, Sans-Serif;
+}
+
+main h1{
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 1%;
+}
+
+main h2, main h3, main h4, main h5, main h6{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 1%;
+}
+
+main p{
+    font-size: 1.5em;
+    text-align: start;
+}
+
+main a{
+    font-size: 1.5em;
+}
+
+
+nav button, main button, .dropdown button .search button{
+    background-color: #0056d2;
+    color: white;
+    font-size: 1.4rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: max-content;
+}
+
+
+/* start header ####################################################### */
+/* the whole header */
+nav{
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid rgb(228, 223, 223);
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 1%;
+}
+
+/* toggler button */
+.navbar-toggler-icon{
+    margin-right: 2%;
+}
+
+/* logo properties */
+.logo{
+    margin-left: 1%;
+}
+
+.logo a{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #0056d2;
+}
+
+/* the flexible navbar */
+.navbar-nav{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.nav-item{
+    margin-right: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+/* navbar <a> tags without underline */
+nav a{
+    text-decoration: none;
+}
+
+/* assign the color and size of fonts for several navbar items */
+.four a, .five a, .six a{
+    font-size: 1.4rem;
+    color: black;
+}
+
+.seven a{
+    color: #0056d2;
+    font-size: 1.4rem;
+}
+
+
+/* assign the hover function for several navbar items */
+.four a:hover, .five a:hover, .six a:hover, .seven a:hover, .eight a:hover{
+    text-decoration: underline;
+    color: #0056d2;
+}
+
+
+/* drop down menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:white;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+  
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    font-size: 1rem;
+    padding: 2%;
+}
+
+.dropdown-content a:hover {background-color: #0056d2; color: white;}
+  
+.dropdown:hover .dropdown-content {display: block;}
+  
+.dropdown:hover .dropbtn {background-color: white; color: #0056d2;}
+
+button:hover{background-color: white; color: #0056d2; cursor: pointer;}
+
+
+/* search field */
+.search{
+    display: flex;
+}
+
+.search input[type=text] {
+    font-size: 1.4rem;
+    border: 1px solid grey;
+    float: left;
+    min-width: 18vw;
+    background: white;
+    overflow: hidden;
+    border-radius: 5px
+}
+
+/* end header ###########################################*/
+
+
+
+/* start first card #####################################*/
+.first-card{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 5%;
+}
+
+.first-card .right-side{
+    padding: 5%;
+    flex: 50%;
+}
+
+.first-card .right-side img{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.first-card .left-side{
+    padding: 5%;
+    flex: 50%;
+}
+
+
+.first-card .left-side .buttons button{
+    margin: 1%;
+}
+
+@media only screen and (max-width: 780px) {
+    /* For mobile phones: */
+    .first-card .right-side{
+        display: none;
+    }
+    
+}
+/* end first card ######################################################*/
+
+
+/* start company-logos #####################################*/
+.company-logos{
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 5%;
+}
+
+.company-logos h1{
+    padding: 2rem;
+}
+
+.company-logos a{
+    font-size: 2rem;
+    line-height: 2rem;
+    text-decoration: none;
+}
+
+.company-logos .logos img{
+    height: 2rem;
+    margin: 2%;
+}
+/* end company logos ################################################*/
+
+
+/* start scrolable card row ################################### */
+/* top titles */
+.row-titles{
+    /* margin-left: 15%; 
+    margin-right: 15%; 
+    margin-top: 5%; 
+    margin-bottom: 2%; */
+    padding: 5%;
+}
+
+.row-titles h5{
+    margin-bottom: 3%;
+}
+
+.row-titles h1{
+    margin-bottom: 3%
+}
+
+.row-titles h6{
+    margin-bottom: 3%
+}
+
+/* below title */
+.below{
+    padding: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.below a{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* row cards */
+.horizontal-scrollable{
+    width: 80%;
+    margin-left: 10%;
+    padding: 1%;
+}
+
+.horizontal-scrollable .row{
+    padding: 1%;
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+
+/* to hide scroll bar */
+/* ::-webkit-scrollbar {
+    width: 0;  
+    background: transparent; 
+} */
+
+.horizontal-scrollable .card{
+    display: inline-block;
+    width: 20rem;
+    height: 25rem;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 0%;
+    background-color: #00255d;
+    color: white;
+}
+
+.horizontal-scrollable .card h3{
+    font-weight: bold;
+}
+
+.horizontal-scrollable p{
+    text-align: left;
+}
+
+.horizontal-scrollable .card-img-top{
+    max-width: 100%;
+    height: 210px;
+}
+
+
+.horizontal-scrollable .card-footer{
+    font-weight: bold;
+    width: 100%;
+}
+
+.horizontal-scrollable img{
+    width: 100%;
+}
+
+.horizontal-scrollable button{
+    width: 40px;
+    height: 40px;
+    font-weight: bold;
+    border: none;
+    background-color: #f5f5f5;
+}
+
+/* end scrolable card row ################################### */
+
+
+/* start fields cards with grid layout ############################# */
+.fields{
+    padding: 5%;
+}
+
+.courses{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    padding: 1%;
+    flex-wrap: wrap;
+}
+
+.courses a{
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
+}
+
+.courses .flex-item{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 2%;
+    width: 320px;
+}
+
+.courses .flex-item .right-side{
+    width: 150px;
+    padding: 2%;
+    flex: 1;
+}
+
+.courses .flex-item .left-side{
+    width: 150px;
+    flex: 1;
+}
+
+.courses .flex-item .right-side h5{
+    padding: 1%;
+    margin-bottom: 10%;
+    font-weight: bold;
+}
+
+.courses .flex-item .right-side h6{
+    padding: 1%;
+}
+
+.courses .flex-item img{
+    height: 100%;
+    width: 100%;
+}
+/* end fields cards with grid layout ############################# */
+
+/* start second card ####################################*/
+.second-card{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #ebf3fe;
+    padding: 5%;
+}
+
+.second-card .right-side{
+    padding-right:5%;
+    padding-left: 5%;
+    flex: 50%;
+}
+
+.second-card .left-side{
+    padding-right:10%;
+    padding-left: 10%;
+    flex: 50%;
+}
+
+.second-card .left-side img{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.second-card .right-side .buttons{
+    text-align: center;
+    margin-top: 2%;
+}
+
+.seconf-card .right-side .buttons button{
+    margin: 1%;
+}
+/* end second card #############################################*/
+
+
+/* start community ######################################## */
+.community{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: flex-start;
+    padding: 5%;
+}
+
+.community hr{
+    width:40%;
+    color: #0056d2;
+    padding: 2%;
+    margin: 0 auto;
+}
+
+.community .card{
+    margin: 1%;
+    padding: 1%;
+    max-width: 500px;
+    border: none;
+}
+
+.community .card .card-body h5{
+    color:#0056d2;
+    text-align: center;
+}
+
+.community .card .card-body h6{
+    text-align: center;
+}
+
+.community .card .card-body p{
+    text-align: center;
+}
+
+.community .card img{
+    width:60%;
+    margin: 0 auto;
+}
+/* end community ######################################## */
+
+
+/* start pre-footer ###############################*/
+
+.pre-footer{
+    background-color: #f5f5f5;
+    padding: 1%;
+}
+
+.pre-footer-container{
+    display: flex;
+    justify-content:center;
+    align-items:flex-start;
+    padding: 1%;
+    flex-wrap: wrap;
+
+}
+
+.pre-footer-container .flex-item{
+    padding: 3%;
+    flex: 1;
+}
+
+.pre-footer img{
+    max-width: 200px;
+    border-radius: 5px;
+}
+
+.pre-footer a{
+    text-decoration: none;
+    color: black;
+}
+
+.pre-footer hr{
+    width: 80%;
+    margin-left: 10%;
+}
+
+.social-media a{
+    font-size: 2rem;
+    padding: 1%;
+}
+
+/* end pre-footer ###############################*/
+
+
+
+
+
+
+
