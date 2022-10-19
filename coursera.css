@@ -189,7 +189,19 @@ button:hover{background-color: white; color: #0056d2; cursor: pointer;}
     .first-card .right-side{
         display: none;
     }
-    
+    .second-card{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        background-color: #ebf3fe;
+        padding: 5%;
+    }
+    .second-card .left-side{
+        margin-bottom: 8%;
+    }
 }
 /* end first card ######################################################*/
 
